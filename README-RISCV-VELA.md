@@ -2,6 +2,9 @@
 
 ## Kas build
 
+KAS is a Python-based tool designed to automate Yocto-based builds.
+See [https://kas.readthedocs.io/](https://kas.readthedocs.io/)
+
 ```
 kas build kas/riscv-vela.yml
 ```
