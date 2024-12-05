@@ -25,3 +25,8 @@ MACHINE=qemuriscv64 runqemu nographic
 ```
 
 To exit QEMU enter Ctrl+A+X.
+
+## Change linux kernel configuration
+
+리눅스 커널 설정을 수정하려면 configuration fragment 파일을 추가하고, 리눅스 커널 레시피의 do_configure에서 merge_config.sh를 실행하도록 하면 됩니다.
+recipes-kernel/linux/linux-yocto_%.bbappend, recipes-kernel/linux/linux-yocto/riscv-vela.cfg 참고.
