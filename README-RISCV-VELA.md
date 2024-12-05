@@ -34,10 +34,10 @@ recipes-kernel/linux/linux-yocto_%.bbappend, recipes-kernel/linux/linux-yocto/ri
 ## Modify linux kernel source
 
 리눅스 커널 소스를 수정하려면 build/tmp/work-shared/qemuriscv64/kernel-source에서 변경 사항을 적용합니다.
-이 후 "kas shell kas/riscv-vela.yml" 명령으로 kas shell을 실행하고, 다음 명령으로 커널을 다시 빌드합니다.
+다음 명령으로 커널을 다시 빌드합니다.
 
 ```
-bitbake -f -c compile linux-yocto
-bitbake linux-yocto
+kas build --target linux-yocto -c compile kas/riscv-vela.yml -- -f && kas build --target linux-yocto kas/riscv-vela.yml
 ```
+
 QEMU를 다시 실행하면 커널의 변경사항이 반영되어 있습니다.
