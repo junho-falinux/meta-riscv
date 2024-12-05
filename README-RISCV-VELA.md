@@ -3,7 +3,7 @@
 ## Kas build
 
 ```
-kas build kas/base-riscv.yml
+kas build kas/riscv-vela.yml
 ```
 
 ## Running in QEMU
@@ -11,7 +11,7 @@ kas build kas/base-riscv.yml
 Run kas shell.
 
 ```
-kas shell kas/base-riscv.yml
+kas shell kas/riscv-vela.yml
 
 ```
 
