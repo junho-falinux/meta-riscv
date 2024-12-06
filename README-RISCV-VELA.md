@@ -31,4 +31,10 @@ recipes-kernel/linux/linux-yocto_%.bbappend, recipes-kernel/linux/linux-yocto/ri
 kas build --target linux-yocto -c compile kas/riscv-vela.yml -- -f && kas build --target linux-yocto kas/riscv-vela.yml
 ```
 
-QEMU를 다시 실행하면 커널의 변경사항이 반영되어 있습니다.
+아래와 같이 QEMU를 다시 실행하면 커널의 변경사항이 반영된 내용을 확일 할 수 있습니다.
+
+```
+kas shell -c "runqemu nographic" kas/riscv-vela.yml
+```
+
+
